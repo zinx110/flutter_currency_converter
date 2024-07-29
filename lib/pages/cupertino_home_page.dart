@@ -41,6 +41,19 @@ class _CupertinoHomePage extends State<CupertinoHomePage> {
               child: Container(
                 padding: const EdgeInsets.all(10),
                 margin: const EdgeInsets.all(8),
+                child: const Text(
+                  "Cupertino App",
+                  style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.w600,
+                      color: Color.fromARGB(255, 255, 255, 255)),
+                ),
+              ),
+            ),
+            Center(
+              child: Container(
+                padding: const EdgeInsets.all(10),
+                margin: const EdgeInsets.all(8),
                 child: Text(
                   "BDT ${result.toStringAsFixed(2)}",
                   style: const TextStyle(
@@ -53,10 +66,13 @@ class _CupertinoHomePage extends State<CupertinoHomePage> {
             CupertinoTextField(
               controller: textEditingController,
               style: const TextStyle(
-                color: CupertinoColors.black,
+                color: CupertinoColors.white,
               ),
               placeholder: "Please enter the amount in usd",
-              prefix: const Icon(CupertinoIcons.money_dollar),
+              prefix: const Icon(
+                CupertinoIcons.money_dollar,
+                color: CupertinoColors.white,
+              ),
               decoration: BoxDecoration(
                 border: Border.all(),
                 borderRadius: BorderRadius.circular(5),

@@ -4,7 +4,7 @@ import 'package:flutter_currency_converter/pages/cupertino_home_page.dart';
 import 'package:flutter_currency_converter/pages/material_home_page.dart';
 
 void main() {
-  runApp(const MyCupertinoApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {

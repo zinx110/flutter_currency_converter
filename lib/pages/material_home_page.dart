@@ -41,7 +41,7 @@ class _MaterialHomePage extends State<MaterialHomePage> {
         style: BorderStyle.solid,
         strokeAlign: BorderSide.strokeAlignInside,
       ),
-      borderRadius: BorderRadius.all(Radius.circular(20)),
+      borderRadius: BorderRadius.all(Radius.circular(7)),
     );
 
     return Scaffold(
@@ -58,6 +58,19 @@ class _MaterialHomePage extends State<MaterialHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            Center(
+              child: Container(
+                padding: const EdgeInsets.all(10),
+                margin: const EdgeInsets.all(8),
+                child: const Text(
+                  "Material App",
+                  style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.w600,
+                      color: Color.fromARGB(255, 255, 255, 255)),
+                ),
+              ),
+            ),
             Center(
               child: Container(
                 padding: const EdgeInsets.all(10),
